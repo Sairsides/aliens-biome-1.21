@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "aliens-biome",
+	"version": "${version}",
+	"name": "aliens biome",
+	"description": "Aliens Biome mode by Sairsides",
+	"authors": [
+		"Sairsides"
+	],
+	"contact": {
+		"sources": "https://github.com/"
+	},
+	"license": "MIT",
+	"icon": "assets/aliens-biome/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sair.aliensbiome.AliensBiome"
+		],
+		"fabric-datagen": [
+			"com.sair.aliensbiome.AliensBiomeDataGenerator"
+		],
+      "client": [
+        "com.sair.aliensbiome.AliensBiomeClient"
+      ]
+    },
+	"mixins": [
+		"aliens-biome.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
